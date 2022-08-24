@@ -1,3 +1,7 @@
+cd ~/../../mnt
+echo "Enter the folder path"
+read -r folder_path
+cd $folder_path
 echo "Enter the file name: "
 read file_name
 cd ../'Shell Script'
