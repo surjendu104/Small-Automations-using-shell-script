@@ -1,17 +1,13 @@
-cd ~/../../mnt
-echo "Enter the folder path"
-read -r folder_path
-cd $folder_path
 echo "Enter the file name: "
 read file_name
-cd ../'Shell Script'
+cd ../../../'Solutions'/'Leetcode-Solutions' 
 mkdir "$file_name"
 cd "$file_name"
 echo "Enter your choice for creating language file: "
 echo "1. c\n2. cpp\n3. java\n4. Python\n5. Javascript\n6. Go"
 
 
-echo "enter the corresponding numbers which language file want to create without space"
+echo "enter the corresponding numbers which language file want to create space-separated"
 read -a arr
 
 for i in "${arr[@]}"
@@ -26,3 +22,6 @@ do
         "6") touch ans.go;;
     esac
 done
+
+cd ..
+code .
